@@ -1,4 +1,8 @@
 pre-commit:
+  parallel: true
   commands:
     prettier:
       run: yarn prettier --ignore-unknown --check {staged_files}
+    eslint:
+      glob: "*.{js,cjs,mjs,jsx,ts,tsx,svelte}"
+      run: yarn eslint --max-warnings=0 {staged_files}

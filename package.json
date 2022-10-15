@@ -9,12 +9,17 @@
     "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
     "dev": "vite dev",
     "format": "prettier --write .",
-    "lint": "prettier --check .",
+    "lint": "prettier --check . && eslint --max-warnings=0 --ext js,cjs,mjs,jsx,ts,tsx,svelte .",
     "preview": "vite preview"
   },
   "devDependencies": {
     "@sveltejs/adapter-auto": "next",
     "@sveltejs/kit": "next",
+    "@typescript-eslint/eslint-plugin": "^5.40.0",
+    "@typescript-eslint/parser": "^5.40.0",
+    "eslint": "^8.25.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-svelte3": "^4.0.0",
     "lefthook": "^1.1.2",
     "prettier": "^2.7.1",
     "prettier-plugin-packagejson": "^2.3.0",
