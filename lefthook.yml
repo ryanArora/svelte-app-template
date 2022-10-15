@@ -1,0 +1,4 @@
+pre-commit:
+  commands:
+    prettier:
+      run: yarn prettier --ignore-unknown --check {staged_files}
