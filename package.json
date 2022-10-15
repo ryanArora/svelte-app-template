@@ -5,16 +5,17 @@
   "type": "module",
   "scripts": {
     "build": "vite build",
-    "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
-    "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
     "dev": "vite dev",
     "format": "prettier --write .",
     "lint": "prettier --check . && eslint --max-warnings=0 --ext js,cjs,mjs,jsx,ts,tsx,svelte .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "typecheck": "svelte-kit sync && svelte-check --fail-on-warnings --diagnostic-sources js"
   },
   "devDependencies": {
     "@sveltejs/adapter-auto": "next",
     "@sveltejs/kit": "next",
+    "@types/eslint": "^8.4.6",
+    "@types/prettier": "^2.7.1",
     "@typescript-eslint/eslint-plugin": "^5.40.0",
     "@typescript-eslint/parser": "^5.40.0",
     "eslint": "^8.25.0",

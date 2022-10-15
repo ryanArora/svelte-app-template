@@ -1,0 +1,8 @@
+{
+  "eslint.packageManager": "yarn",
+  "eslint.probe": ["svelte", "typescript", "javascript"],
+  "eslint.validate": ["svelte"],
+  "svelte.ask-to-enable-ts-plugin": false,
+  "svelte.plugin.svelte.diagnostics.enable": false,
+  "css.validate": false
+}

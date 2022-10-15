@@ -6,3 +6,5 @@ pre-commit:
     eslint:
       glob: "*.{js,cjs,mjs,jsx,ts,tsx,svelte}"
       run: yarn eslint --max-warnings=0 {staged_files}
+    typecheck:
+      run: yarn typecheck
