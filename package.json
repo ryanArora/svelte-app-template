@@ -1,0 +1,36 @@
+{
+  "name": "svelte-app-template",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "vite build",
+    "dev": "vite dev",
+    "format": "prettier --write .",
+    "lint": "prettier --check . && eslint --max-warnings=0 --ext js,cjs,mjs,jsx,ts,tsx,svelte .",
+    "preview": "vite preview",
+    "typecheck": "svelte-kit sync && svelte-check --fail-on-warnings --diagnostic-sources js"
+  },
+  "devDependencies": {
+    "@sveltejs/adapter-auto": "next",
+    "@sveltejs/kit": "next",
+    "@trivago/prettier-plugin-sort-imports": "^3.3.1",
+    "@types/eslint": "^8.4.6",
+    "@types/prettier": "^2.7.1",
+    "@typescript-eslint/eslint-plugin": "^5.40.0",
+    "@typescript-eslint/parser": "^5.40.0",
+    "eslint": "^8.25.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-svelte3": "^4.0.0",
+    "lefthook": "^1.1.2",
+    "prettier": "^2.7.1",
+    "prettier-plugin-packagejson": "^2.3.0",
+    "prettier-plugin-svelte": "^2.8.0",
+    "svelte": "^3.44.0",
+    "svelte-check": "^2.7.1",
+    "svelte-preprocess": "^4.10.6",
+    "tslib": "^2.3.1",
+    "typescript": "^4.7.4",
+    "vite": "^3.1.0"
+  }
+}
